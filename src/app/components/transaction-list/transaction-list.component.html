@@ -1,0 +1,4 @@
+<div>
+    <input type='file' accept=".csv" (change)="fileSelected($event.target.files)" />
+    <app-transaction *ngFor="let transaction of transactions" [transaction]="transaction"></app-transaction>
+</div>
